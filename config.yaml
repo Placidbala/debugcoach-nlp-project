@@ -1,0 +1,27 @@
+llm:
+  # Any OpenAI-compatible provider works. Swap base_url + model to switch.
+  # Groq   : https://api.groq.com/openai/v1  | llama-3.3-70b-versatile
+  # Gemini : https://generativelanguage.googleapis.com/v1beta/openai/ | gemini-2.0-flash
+  base_url: https://api.groq.com/openai/v1
+  model: openai/gpt-oss-20b
+  api_key_env: LLM_API_KEY
+  temperature: 0.2
+  max_tokens: 2500
+  timeout_s: 30
+  max_retries: 2
+  json_mode: true
+
+storage:
+  db_path: data/debugcoach.db
+
+categories:
+  - off_by_one
+  - integer_overflow
+  - wrong_initialization
+  - wrong_base_case
+  - edge_case_missed
+  - time_limit_exceeded
+  - wrong_algorithm
+  - logic_error
+  - compile_error
+  - other

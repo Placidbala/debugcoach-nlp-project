@@ -1,0 +1,3 @@
+Total of Large Numbers
+Given n numbers (1 <= n <= 200000), each up to 1000000000 (1e9), print their sum.
+Time limit: 1 second.
